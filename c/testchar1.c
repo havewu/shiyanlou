@@ -3,6 +3,6 @@
 int main()
 {
  char str[]="Ilove";
- printf("Len=%d\n",strlen(str));
+ printf("Len=%zu\n",strlen(str));
  return 0;
 }
