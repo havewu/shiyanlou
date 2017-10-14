@@ -3,10 +3,21 @@ int main()
 {
   int fun(int x,int y);
   int a,b,c;
+  printf("Please enter two integers with two digits:\n");
   printf("Please enter a:");
   scanf("%d",&a);
+  if(a<10 || a>99)
+    {
+     printf("input a error!");
+     return 0;
+    }
   printf("Please enter b:");
   scanf("%d",&b);
+  if(b<10 || b>99)
+    {
+     printf("input b error!");
+     return 0;
+    }
   c=fun(a,b);
   printf("%d",c);
   return 0;
