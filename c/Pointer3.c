@@ -1,13 +1,16 @@
 #include<stdio.h>
 int main()
 {
- int n,*p;
+ int n,i,k,*p;//n : people number; k:n--;
  int a[3]={11,22,33};
- p=a;
- printf("%d\n",*p);
- printf("%d\n",*(p+1));
- printf("%d\n",*(p+2));
- printf("%d\n",*(p+3));
- printf("%d\n",*(p+4));
+ printf("Enter the number of people:");
+ scanf("%d",&n);
+ printf("n=%d\n",n);
+ int arr_n[n];
+  for(i=0;i<n;i++)
+   arr_n[i]= i+1;
+ p=arr_n;
+  
+
  return 0;
 }
