@@ -6,11 +6,17 @@ int main()
  printf("Enter the number of people:");
  scanf("%d",&n);
  printf("n=%d\n",n);
- int arr_n[n];
+ int arr[n];
   for(i=0;i<n;i++)
-   arr_n[i]= i+1;
- p=arr_n;
-  
+   arr[i]= i+1;
 
+ k=n;
+
+  for(p=arr;p<(arr+n);p++)
+    printf("%p,*p=%d\n",p,*p);
+// while(k>0)
+// {
+    
+// }
  return 0;
 }
