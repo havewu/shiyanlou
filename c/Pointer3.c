@@ -19,7 +19,7 @@ int main()
     
 // }
 // for(p=arr;p<(arr+n);p++)
- p=arr
+ p=arr;
  for(i=1;k>0;i++,p++)
  {
    if(*p == 0 && p == arr+n)
@@ -43,7 +43,8 @@ int main()
    }
    if(p == arr+n)
    {
-     p+1 = arr; 
+    // (p+1) = arr; 
+     p = arr - 1;
    }
  }
  for(p=arr;p<(arr+n);p++)
