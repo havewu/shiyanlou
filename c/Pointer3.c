@@ -7,8 +7,8 @@ int main()
  scanf("%d",&n);
  printf("n=%d\n",n);
  int arr[n];
- // for(i=0;i<n;i++)
- //  arr[i]= i+1;
+  for(i=0;i<n;i++)
+   arr[i]= i+1;
 
  int k=n;
  p=arr;
@@ -18,18 +18,13 @@ int main()
    {
      while(*p == 0)
      {
-       if(p == (arr + n-1))  //if *p is end,p=arr
+       if(p == (arr + n-1))  //1:  if *p is end,p=arr
        {
          p=arr;
          continue;
        }
        p++;
      }
-   //   *p = i;
-   //}
-   //else
-  // {
-    // *p = i;
    }
    *p = i;
    //if(*p != 0 && *p%m==0)
@@ -38,8 +33,8 @@ int main()
      *p = 0;
      k--;
    }
-   if(p == (arr+n-1))
-   //if(p == &arr[n])
+   //if(p == (arr+n-1))
+   if(p == &arr[n-1])      // 2:  if *p is end,p=arr
    {
      p=arr;
    }
