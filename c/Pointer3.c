@@ -1,11 +1,10 @@
 #include<stdio.h>
 int main()
 {
- int n,i,j,*p;//n : total people number; k:how many people are left;
+ int n,i,*p;//n : total people number; k:how many people are left;
  int m=3;
  printf("Enter the number of people:");
  scanf("%d",&n);
- printf("n=%d\n",n);
  int arr[n];
   for(i=0;i<n;i++)
    arr[i]= i+1;
