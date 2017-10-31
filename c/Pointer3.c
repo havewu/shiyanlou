@@ -18,16 +18,23 @@ int main()
 // {
     
 // }
- return 0;
-}
-
-void for()
-{
- for(p=arr;p<(arr+n);p++)
+// for(p=arr;p<(arr+n);p++)
+ p=arr
+ for(i=1;k>0;i++,p++)
  {
+   if(*p == 0 && p == arr+n)
+   {
+     p = arr;
+   }
    if(*p == 0)
    {
-     continue;
+     while(*p = 0)
+       p++;
+     *p = i;
+   }
+   else
+   {
+     *p = i;
    }
    if(*p%m==0)
    {
@@ -39,13 +46,16 @@ void for()
      p+1 = arr; 
    }
  }
+ for(p=arr;p<(arr+n);p++)
+ if(*p != 0 )printf("THE END:%d\n",*p);
+ return 0;
 }
-void fuzhi()
-{
- int i;
-  for(i=0;i<n;i++)
-  {
-    if(*p == 0)continue;
-    *p = *(p-1) + 1;
-  }
-}
+// void fuzhi()
+// {
+//  int i;
+//   for(i=0;i<n;i++)
+//   {
+//     if(*p == 0)continue;
+//     *p = *(p-1) + 1;
+//   }
+// }
