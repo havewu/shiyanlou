@@ -46,8 +46,9 @@ int main()
      p+1 = arr; 
    }
  }
- for(p=arr;p<(arr+n);p++)
- if(*p != 0 )printf("THE END:%d\n",*p);
+ //for(p=arr;p<(arr+n);p++)
+ for(p=arr,i=0;i<n;i++,p++)
+ if(*p != 0 )printf("THE END:%d\n",i);
  return 0;
 }
 // void fuzhi()
