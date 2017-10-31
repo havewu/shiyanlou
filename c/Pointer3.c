@@ -36,7 +36,7 @@ void for()
    }
    if(p == arr+n)
    {
-     
+     p+1 = arr; 
    }
  }
 }
